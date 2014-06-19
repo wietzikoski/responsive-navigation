@@ -1,0 +1,100 @@
+/* Global
+================================ */
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	min-width: 320px;
+}
+
+.grid-container {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* Media Queries
+================================ */
+@media (min-width: 1px) and (max-width: 480px) {
+	.grid-container > [class^="grid-"]{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin: 10px 0;
+	}
+}
+
+@media (min-width: 481px) {
+
+	/* Columns
+	================================ */
+	.grid-container > [class^="grid-"] {
+		float: left;
+		min-height: 1px; 			/*since using float, will keep columns from horizontally collasping */
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 2%;
+	}
+	.grid-container > [class^="grid-"]:first-child {
+		margin-left: 0;
+	}
+	.grid-container > [class^="grid-"]:last-child {
+		float: right; /*last column in row floats right, always flush with right margin of page */
+	}
+
+	/* Columns are 65px wide, with 20px gutters, 1st column (.grid-1) has no gutter
+	=========================================== */
+	.grid-1 {
+		width: 6.5%;
+	}
+	.grid-2 {
+		width: 15%;
+	}
+	.grid-3 {
+		width: 23.5%;
+	}
+	.grid-4 {
+		width: 32%;
+	}
+	.grid-5 {
+		width: 40.5%;
+	}
+	.grid-6 {
+		width: 49%;
+	}
+	.grid-7 {
+		width: 57.5%;
+	}
+	.grid-8 {
+		width: 66%;
+	}
+	.grid-9 {
+		width: 74.5%;
+	}
+	.grid-10 {
+		width: 83%;
+	}
+	.grid-11 {
+		width: 91.5%;
+	}
+	.grid-12 {
+		width: 100%;
+	}
+	/* Clearfix (to keep containers from collapsing)
+	================================ */
+
+	.group:after,
+	.grid-container:after {
+	  content: " ";
+	  display: table;
+	  clear: both;
+	}
+}
+
+@media (min-width: 1200px) {
+	.grid-container {
+		max-width: 1100px;
+	}
+}

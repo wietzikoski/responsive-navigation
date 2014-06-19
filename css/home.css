@@ -1,0 +1,71 @@
+/* Main Styles
+================================ */
+img {
+	width: 100%;
+}
+
+	
+	/* Header
+	================================ */
+	.header {
+		text-align: center;
+		padding: 20px 15px;
+		margin-bottom: 30px;
+		background-color: #E5E9E9;
+	}
+
+	/* Footer
+	================================ */
+	
+
+	/* Colors & Styles
+	================================ */
+	body {
+		font: normal 1em/1.5 sans-serif;
+		color: #222;
+		background-color: #edeff0;
+	}
+	.content span {
+		color: #edeff0;
+	}
+	.g1style {
+		background: #222;
+		height: 80px;
+		margin-bottom: 10px;
+		opacity: .8;
+	}
+	.g2style {
+		background: #222;
+		height: 160px;
+		margin-bottom: 10px;
+		opacity: .8;
+	}
+	.g3style {
+		background: #222;
+		height: 120px;
+		margin-bottom: 10px;
+		opacity: .8;
+	}
+	
+
+
+
+
+/* Media Queries
+================================ */	
+@media (min-width: 480px) {
+	html, 
+	body,
+	.content {
+		height: 100%;
+	}
+@media (min-width: 481px){
+	/* Content
+	================================ */
+	.content {
+		padding-left: 75px;
+	}
+	.content-expanded {
+		padding-left: 200px;
+	}
+}

@@ -1,0 +1,26 @@
+/* Page Styles
+================================ */
+.global-nav a {
+	text-decoration: none;
+}
+ul .global-nav {
+	list-style: none;
+}
+
+
+/* Media Queries
+================================ */	
+@media (min-width: 480px) {
+	html, 
+	body,
+	.grid-container {
+		height: 100%;
+	}
+
+	body {
+		font: normal 1em/1.5 sans-serif;
+		color: #222;
+		background-color: #edeff0;
+		min-height: 100%;
+	}
+}
